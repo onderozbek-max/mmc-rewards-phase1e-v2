@@ -9,7 +9,7 @@
   --mmc-success: var(--ld-semantic-color-fill-positive, #2a8703);
   --mmc-radius-card: 1.25rem;
   --mmc-radius-control: 0.875rem;
-  --mmc-app-width: 44rem;
+  --mmc-app-width: 28rem;
 }
 
 * {
@@ -35,7 +35,7 @@ a {
 }
 
 .app-shell {
-  background: var(--mmc-surface-soft);
+  background: var(--mmc-surface);
   margin: 0 auto;
   min-height: 100vh;
   padding-bottom: calc(5rem + env(safe-area-inset-bottom));
@@ -544,9 +544,17 @@ a {
 }
 
 @media (min-width: 48rem) {
+  body {
+    padding: 1rem 0;
+  }
+
   .app-shell {
-    box-shadow: 0 0 2.5rem color-mix(in srgb, var(--mmc-ink) 10%, transparent);
+    border: 1px solid var(--mmc-border);
+    border-radius: 2rem;
+    box-shadow: 0 1rem 3rem color-mix(in srgb, var(--mmc-ink) 16%, transparent);
+    min-height: calc(100vh - 2rem);
     max-width: var(--mmc-app-width);
+    overflow: hidden;
   }
 
   .community-header__inner {

@@ -145,3 +145,4 @@ The `ld:*` aliases exist for convenience. Prefer `node scripts/ld/cli.mjs …`
 in anything an agent reads — it avoids npm's `--` passthrough and its stdout
 banner, and it works from any directory.
 # mmc-rewards-phase1e-v2
+# mmc-rewards-phase1e-v2

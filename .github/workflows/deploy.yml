@@ -25,9 +25,8 @@ jobs:
         uses: actions/checkout@v5
 
       - name: Configure GitHub Pages
+        # Enable Pages first in repository Settings → Pages → Source: GitHub Actions.
         uses: actions/configure-pages@v6
-        with:
-          enablement: true
 
       - name: Upload committed dist
         uses: actions/upload-pages-artifact@v4
